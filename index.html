@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Suite landing page</title>
-</head>
-<body>
-
-  Request Beta Access
-
-  A super solution for your business.
-
-  Our marketing and sales automations help you scale your outreach to 
-  get more leads for your company. 
-
-  Request Beta Access
-
-  2K+
-  Companies
-
-  8
-  Languages
-
-  1.2M
-  Leads
-
-  It just works.
-
-  “I really like how it is an all-in-one solution that handle many of 
-  the tasks that you would normally need separate tools to do the same 
-  job. This thing is a miracle worker.”
-
-  Jeremy Robinson
-  CMO, Fylo
-
-  Copyright - Suite
-
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Suite landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./assets/logo.svg" alt="Suite Website" />
+      <button class="btn btn-small btn-light">Request Beta Access</button>
+    </header>
+    <main class="main">
+      <div class="hero">
+        <h1 class="h1-like">
+          A <span>supper solution</span> for your <span>business</span>
+        </h1>
+        <p class="p-like">
+          Our marketing and sales automations help you scale your outreach to
+          get more leads for your company.
+        </p>
+        <button class="btn btn-big btn-dark">Request Beta Access</button>
+        <ul class="numbers">
+          <li>
+            <h2>2K+</h2>
+            <p>COMPANIES</p>
+          </li>
+          <li>
+            <h2>8</h2>
+            <p>LANGUAGES</p>
+          </li>
+          <li>
+            <h2>1.2M</h2>
+            <p>LEADS</p>
+          </li>
+        </ul>
+      </div>
+      <div class="review">
+        <div class="review-img"></div>
+        <div class="review-quote">
+          <h3>It just <span>works.</span></h3>
+          <p>
+            “I really like how it is an all-in-one solution that handle many of
+            the tasks that you would normally need separate tools to do the same
+            job. This thing is a miracle worker.”
+          </p>
+          <p>Jeremy Robinson</p>
+          <p>CMO. FYLO</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <img class="logo" src="./assets/logo.svg" alt="Suite Website" />
+      <p class="p-like p-footer">Copyright - Suite</p>
+      <ul class="social-links">
+        <li class="social-link">
+          <img src="./assets/icon-facebook.svg" alt="" aria-hidden="true" />
+        </li>
+        <li class="social-link">
+          <img src="./assets/icon-twitter.svg" alt="" aria-hidden="true" />
+        </li>
+        <li class="social-link">
+          <img src="./assets/icon-instagram.svg" alt="" aria-hidden="true" />
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
