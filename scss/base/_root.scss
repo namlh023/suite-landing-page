@@ -9,13 +9,16 @@
 
   --ff-primary: "Epilogue", sans-serif;
 
+  --fw-400: 400;
+  --fw-700: 700;
+
   --fs-heading-xl: 2.375rem;
   --lh-heading-xl: 2.75rem;
   --ls-heading-xl: -0.032986125rem;
 
-  --fs-heading-l: 2.5rem;
-  --lh-heading-l: 3rem;
-  --ls-heading-l: -0.0260416875rem;
+  --fs-heading-l: 3rem;
+  --lh-heading-l: 3.5rem;
+  --ls-heading-l: -0.03125rem;
 
   --fs-heading-m: 1.125rem;
   --lh-heading-m: 2rem;
@@ -37,10 +40,27 @@
   --lh-footer: 2rem;
   --ls-footer: 0.00520833125rem;
 
+  --fs-button: 0.875rem;
+  --lh-button: 1.5rem;
+  --ls-button: -0.00875rem;
+
+  --container-width: 1rem;
+  --hero-width: 3.5rem;
+  --line-width: 2rem;
+  --p-margin-2: 2rem;
+
   @media (min-width: 48em) {
     --fs-heading-xl: 3.5rem;
     --lh-heading-xl: 4rem;
     --ls-heading-xl: -0.048611125rem;
+
+    --fs-button: 1rem;
+    --lh-button: 2rem;
+    --ls-button: -0.01rem;
+
+    --p-margin-2: 2.5rem;
+
+    --container-width: 2.5rem;
   }
 
   @media (min-width: 90em) {
@@ -48,9 +68,9 @@
     --lh-heading-xl: 4.875rem;
     --ls-heading-xl: 0.0625rem;
 
-    --fs-heading-l: 3rem;
-    --lh-heading-l: 3.5rem;
-    --ls-heading-l: -0.03125rem;
+    // --fs-heading-l: 3rem;
+    // --lh-heading-l: 3.5rem;
+    // --ls-heading-l: -0.03125rem;
 
     --fs-quote: 1.25rem;
     --lh-quote: 2.1875rem;
@@ -59,5 +79,7 @@
     --fs-body: 1.125rem;
     --lh-body: 2rem;
     --ls-body: 0.00625rem;
+
+    --container-width: 10.375rem;
   }
 }
