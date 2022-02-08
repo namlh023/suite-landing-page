@@ -62,6 +62,7 @@
   --review-width: 1rem;
   --p-margin-2: 2rem;
   --p-margin-25: 2.5rem;
+  --header-width: 1.5rem;
 
   @media (min-width: 48em) {
     --fs-heading-xl: 3.5rem;
@@ -80,10 +81,11 @@
 
     --container-width: 2.5rem;
     --review-width: 3.5rem;
+    --header-width: 2.5rem;
   }
 
   @media (min-width: 90em) {
-    --fs-heading-xl: 4.5rem;
+    --fs-heading-xl: 4.2rem;
     --lh-heading-xl: 4.875rem;
     --ls-heading-xl: 0.0625rem;
 
@@ -98,5 +100,6 @@
     --container-width: 10.375rem;
     --review-width: 7.8125rem;
     --line-2-width: 3.5rem;
+    --header-width: 3.2rem;
   }
 }

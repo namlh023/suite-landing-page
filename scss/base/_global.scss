@@ -204,7 +204,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 1.5rem;
+  margin-top: var(--header-width);
 }
 
 .hero {
@@ -368,6 +368,8 @@ body {
 
     flex-direction: column;
     justify-content: center;
+
+    text-align: left;
   }
 
   .review {
