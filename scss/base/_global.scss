@@ -8,6 +8,8 @@ body {
 
   max-width: 90em;
   margin: auto;
+
+  position: relative;
 }
 
 .container {
@@ -48,7 +50,7 @@ body {
   top: 0;
   width: 100%;
   height: var(--line-width);
-  background-image: url("../../assets/pattern-curved-line-1.svg");
+  background-image: url("../assets/pattern-curved-line-1.svg");
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: top right;
@@ -108,6 +110,13 @@ body {
   margin-right: auto;
 }
 
+.p-footer {
+  font-weight: var(--fw-400);
+  font-size: var(--fs-footer);
+  line-height: var(--lh-footer);
+  letter-spacing: var(--ls-footer);
+}
+
 .btn {
   font-weight: var(--fw-700);
   padding: 0.8em 1.2em;
@@ -145,12 +154,7 @@ body {
   border: 0.375rem;
 
   &:hover {
-    background: linear-gradient(
-      135deg,
-      #a060ff 0%,
-      #cb30e3 49.21%,
-      #ffa84e 100%
-    );
+    background: var(--bg-button);
   }
 }
 
@@ -214,7 +218,7 @@ body {
 }
 
 .hero-img {
-  background-image: url("../../assets/image-hero-landscape.webp");
+  background-image: url("../assets/image-hero-landscape.webp");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 100%;
@@ -243,7 +247,7 @@ body {
 }
 
 .review-img {
-  background-image: url("../../assets/image-jeremy-small.webp");
+  background-image: url("../assets/image-jeremy-small.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -260,7 +264,7 @@ body {
   left: 0;
   width: 100%;
   height: var(--line-2-width);
-  background-image: url("../../assets/pattern-curved-line-2.svg");
+  background-image: url("../assets/pattern-curved-line-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -269,6 +273,26 @@ body {
 .review-quote {
   padding: var(--review-width);
   padding-bottom: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-gray);
+
+  gap: 2rem;
+  padding: 3rem var(--container-width);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
 }
 
 @media (min-width: 48em) {
@@ -292,7 +316,7 @@ body {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 
-    background-image: url("../../assets/image-hero-portrait.webp");
+    background-image: url("../assets/image-hero-portrait.webp");
   }
 
   .numbers {
@@ -306,6 +330,18 @@ body {
   .review {
     margin-left: var(--container-width);
     margin-right: var(--container-width);
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    min-height: 30rem;
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    z-index: -1;
   }
 }
 
@@ -321,7 +357,7 @@ body {
 
   .hero-img {
     grid-column: 3 / 5;
-    background-image: url("../../assets/image-hero-portrait@2x.webp");
+    background-image: url("../assets/image-hero-portrait@2x.webp");
 
     min-height: 35rem;
   }
@@ -362,7 +398,7 @@ body {
     width: 100%;
     height: 110%;
 
-    background-image: url("../../assets/image-jeremy-large.webp");
+    background-image: url("../assets/image-jeremy-large.webp");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: bottom center;
@@ -373,7 +409,11 @@ body {
     left: unset;
     right: 0;
     width: 100%;
-    background-image: url("../../assets/pattern-curved-line-2.svg");
+    background-image: url("../assets/pattern-curved-line-2.svg");
     background-position: right center;
+  }
+
+  .footer {
+    bottom: -15%;
   }
 }
